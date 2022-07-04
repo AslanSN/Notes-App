@@ -1,0 +1,60 @@
+.home-card {
+	--card-height: 2rem + 55vmin;
+
+  width: calc(4rem + 46vmax);
+  height: calc(var(--card-height));
+  background: #fff;
+  border-radius: 1.5rem;
+  font-size: calc(0.1rem + 1.8vmin);
+	box-shadow: var(--box-shadow);
+
+  & container {
+    height: calc(var(--card-height) - 10vmin);
+    margin: 5vmin;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    & header {
+      & h2 {
+        margin: 0 auto auto auto;
+      }
+      & p {
+        color: rgb(106, 106, 106);
+      }
+    }
+
+    & content {
+      background-color: #f7f7f7;
+      border: 1px solid #dfdfdf;
+      height: calc(0.5rem + 20vmin);
+      overflow-y: auto;
+
+      & ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+				padding: 2vmin;
+				margin: 0;
+        padding: 0.5vmin 2vmin;
+      }
+    }
+
+    & footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      & span.left {
+        display: flex;
+        & .first{
+					margin: 0 1rem 0 0;
+				}
+      }
+    }
+  }
+}

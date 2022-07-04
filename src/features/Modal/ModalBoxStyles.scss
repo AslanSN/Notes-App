@@ -1,0 +1,29 @@
+card.modal-card {
+  --modal-card-height: calc(2rem + 15vmin);
+
+  background-color: #fff;
+  margin: 10vmin 0 0 0;
+  padding: 5vmin;
+  border-radius: 1.5rem;
+  height: var(--modal-card-height);
+  box-shadow: var(--box-shadow);
+
+  & .modal-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: var(--modal-card-height);
+    p {
+      font-size: calc(0.1rem + 1.8vmin);
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin: 0.5rem 0 0 0;
+    }
+  }
+}

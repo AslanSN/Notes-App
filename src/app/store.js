@@ -1,8 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
-
+import itemReducer from '../features/reducers/itemSlice';
+import modalReducer from '../features/reducers/modalSlice';
+import undoable from 'redux-undo';
+/**
+ * ! STORE - Configuration
+ * * AslanSN - 22-07-01
+ * ? Contents all the undoable and normal reducers
+ */
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    items: undoable(itemReducer),
+    modal: modalReducer,
   },
 });
