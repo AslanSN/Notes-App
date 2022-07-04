@@ -1,14 +1,14 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { ActionCreators } from "redux-undo";
 // Components
-import { SecondaryButtonStyled } from "../Static/Styled/Buttons/SecondaryButtonStyled";
-import { PrimaryButtonStyled } from "../Static/Styled/Buttons/PrimaryButtonStyled";
+import { SecondaryButtonStyled } from "../../components/Static/Styled/Buttons/SecondaryButtonStyled";
+import { PrimaryButtonStyled } from "../../components/Static/Styled/Buttons/PrimaryButtonStyled";
 import { Icon } from "@iconify/react";
-import Items from "./ItemList/Items";
+import Items from "../../components/Home/ItemList/Items";
 // Reducers
-import { toggleIsOpen } from "../reducers/modalSlice";
-import { deleteSelected } from "../reducers/itemSlice.js";
+import { toggleIsOpen } from "../../features/reducers/modalSlice";
+import { deleteSelected } from "../../features/reducers/itemSlice.js";
 // Styles
 import "./HomeStyles.scss";
 
@@ -18,10 +18,9 @@ import "./HomeStyles.scss";
  * @returns Component - React
  */
 const Home = () => {
-  const dispatch = useDispatch();
-  const list = useSelector((state) => state.items.itemsList);
-  const toggleOpen = () => dispatch(toggleIsOpen());
-  const deletion = () => dispatch(deleteSelected());
+  const dispatch = useDispatch(),
+    toggleOpen = () => dispatch(toggleIsOpen()),
+    deletion = () => dispatch(deleteSelected());
 
   return (
     <card className="home-card">

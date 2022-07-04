@@ -5,7 +5,7 @@ import {
   toggleSelectedOf,
   individualDeletion,
   selectItem,
-} from "../../reducers/itemSlice.js";
+} from "../../../features/reducers/itemSlice";
 /** Styles */
 import { ItemStyled } from "./ItemStyled.js";
 /**
