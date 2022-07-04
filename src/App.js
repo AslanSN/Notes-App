@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 import Home from "./Views/HomeView/Home";
-import ModalBox from "./components/Home/Modal/ModalBox";
+import ModalBox from "./components/Modal/ModalBox";
 
 import "./App.css";
 

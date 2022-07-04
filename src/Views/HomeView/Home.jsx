@@ -2,10 +2,10 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { ActionCreators } from "redux-undo";
 // Components
-import { SecondaryButtonStyled } from "../../components/Static/Styled/Buttons/SecondaryButtonStyled";
-import { PrimaryButtonStyled } from "../../components/Static/Styled/Buttons/PrimaryButtonStyled";
+import { SecondaryButtonStyled } from "../../components/Styled/Buttons/SecondaryButtonStyled";
+import { PrimaryButtonStyled } from "../../components/Styled/Buttons/PrimaryButtonStyled";
 import { Icon } from "@iconify/react";
-import Items from "../../components/Home/ItemList/Items";
+import Items from "../../components/ItemList/Items";
 // Reducers
 import { toggleIsOpen } from "../../features/reducers/modalSlice";
 import { deleteSelected } from "../../features/reducers/itemSlice.js";

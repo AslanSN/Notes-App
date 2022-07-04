@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Tokens } from "../../Tokens";
+import { Tokens } from "../../../static/Tokens";
 /**
  * ! Button - Secondary
  * * AslanSN - 22-07-02

@@ -1,13 +1,13 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 //Components
-import { PrimaryButtonStyled } from "../../Static/Styled/Buttons/PrimaryButtonStyled";
-import { SecondaryButtonStyled } from "../../Static/Styled/Buttons/SecondaryButtonStyled";
-import { InputStyled } from "../../Static/Styled/InputStyled";
-import { Overlay } from "../../Static/Styled/OverlayStyled";
+import { PrimaryButtonStyled } from "../Styled/Buttons/PrimaryButtonStyled";
+import { SecondaryButtonStyled } from "../Styled/Buttons/SecondaryButtonStyled";
+import { InputStyled } from "../Styled/InputStyled";
+import { Overlay } from "../Styled/OverlayStyled";
 //Reducers
-import { toggleIsOpen } from "../../../features/reducers/modalSlice";
-import { addItem } from "../../../features/reducers/itemSlice.js";
+import { toggleIsOpen } from "../../features/reducers/modalSlice";
+import { addItem } from "../../features/reducers/itemSlice.js";
 //Styles
 import "./ModalBoxStyles.scss";
 /**

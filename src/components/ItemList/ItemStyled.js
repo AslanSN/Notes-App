@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Tokens } from "../../Static/Tokens";
+import { Tokens } from "../../static/Tokens";
 /**
  * ! Styled Component
  * * AslanSN - 22-07-03
