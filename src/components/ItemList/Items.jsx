@@ -27,11 +27,11 @@ const Items = () => {
     <ul>
       {list.map((item) => (
         <ItemStyled
-          className={item.selected ? "selected" : null}
+          className={item.isSelected ? "selected" : null}
           key={item.id}
           onClick={() => selected(item.id)}
           onDoubleClick={() => deletion(item.id)}>
-          {item.content}
+          {item.content}{console.log(item)}
         </ItemStyled>
       ))}
     </ul>
