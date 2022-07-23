@@ -1,0 +1,19 @@
+{
+  "name": "bend",
+  "version": "1.0.0",
+  "description": "API Rest with Node.js, Express and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AslanSN/Notes-App.git"
+  },
+  "author": "AslanSN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AslanSN/Notes-App/issues"
+  },
+  "homepage": "https://github.com/AslanSN/Notes-App#readme"
+}
